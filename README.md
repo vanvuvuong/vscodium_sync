@@ -1,8 +1,8 @@
-# VSCodium Setting Syncing Tools
+# [VSCodium](https://github.com/VSCodium/vscodium) Setting Syncing Tools
 
 #### The purpose of this repository is to help developers that use VSCodium (an OSS of VSCode) for multiple machine syncing settings more easily and effortlessly.
 
-This repo is seperated with the main repo of VSCodium, and is a personal intended repo.
+This repo is seperated with the main repo of [VSCodium](https://github.com/VSCodium/vscodium), and is a personal intended repo.
 
 ### Support enviroment:
 
