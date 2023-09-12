@@ -1,5 +1,5 @@
-codium --install-extension Updating VS Code Server to version d48b950f7741008f7fb375881b45188dd73ecac4
-codium --install-extension Removing previous installation...
-codium --install-extension Installing VS Code Server for x64 (d48b950f7741008f7fb375881b45188dd73ecac4)
-codium --install-extension Downloading: 100%
-codium --install-extension Failed
+codium --install-extension 4ops.terraform
+codium --install-extension ahmadalli.vscode-nginx-conf
+codium --install-extension bmewburn.vscode-intelephense-client
+codium --install-extension bradlc.vscode-tailwindcss
+codium --install-extension bungcip.better-toml
