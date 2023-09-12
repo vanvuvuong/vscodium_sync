@@ -1,0 +1,101 @@
+{
+    // Place your snippets for python here. Each snippet is defined under a snippet name and has a prefix, body and 
+    // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+    // same ids are connected.
+    // Example:
+    "Dynamic Class Format": {
+        "prefix": "dynamic",
+        "body": [
+            "# THIS CODE USE THE DYNAMIC CLASS",
+            "# constructor",
+            "def constructor(self, **args):",
+            "\tfor arg in args:",
+            "\t\tself.arg = arg\n",
+
+
+            "# method",
+            "def method(self, arg):",
+            "\tprint(arg)\n",
+
+            "# class method",
+            "@classmethod",
+            "def class_method1(cls, arg):",
+            "\tprint(arg)\n",
+
+            "# class method",
+            "@classmethod",
+            "def class_method2(cls, arg):",
+            "\tprint(arg)\n",
+
+            "dynamic_class = type(\"DynamicClass\", (object, ),",
+            "\t\t{",
+            "\t# constructor",
+            "\t\"__init__\": constructor,",
+            "\t# properties",
+            "\t\"type\": \"Dynamic Instance\",",
+
+            "\t# functions and method",
+            "\t\"method_name\": method,",
+            "\t\"class_func_name1\": class_method1",
+            "\t\"class_func_name2\": class_method2",
+            "\t})",
+        ],
+        "description": "dynamic class for python"
+    },
+    "Advanced Python Comment": {
+        "prefix": "advcomment",
+        "body": [
+            "###########################################################",
+            "# ${1:COMMENT}",
+            "###########################################################"
+        ],
+        "description": "create a quick python comment"
+    },
+    "Main run testing": {
+        "prefix": "mainrun",
+        "body": [
+            "if __name__ == \"__main__\":",
+            "\t"
+        ]
+    },
+    "Dict Typed": {
+        "prefix": "typeddict",
+        "body": [
+            "${1:DictTyped} = TypedDict(\"${1:DictTyped}\", {",
+            "\t${2:data}",
+            "})"
+        ]
+    },
+    "Check Run Time": {
+        "prefix": "checkruntime",
+        "body": [
+            "_ = time.time()",
+            "${2:Code}",
+            "logging.info(f\"${1:Title} Run Time: {time.time() - _}s \")"
+        ]
+    },
+    "Logging Config": {
+        "prefix": "configlogging",
+        "body": [
+            "logging.basicConfig(",
+                "\tformat='%(asctime)s %(levelname)-8s %(message)s',",
+                "\tlevel=logging.DEBUG,",
+                "\tdatefmt='%Y-%m-%d %H:%M:%S'",
+                "\t)"
+        ]
+    },
+    "Add logging info": {
+        "prefix": "infologging",
+        "body": "logging.info(\"${1:Message}\")"
+    },
+    "Add logging debug": {
+        "prefix": "debuglogging",
+        "body": "logging.debug(\"${1:Message}\")"
+    },
+    "Add logging warning": {
+        "prefix": "warnlogging",
+        "body": "logging.warn(\"${1:Message}\")"
+    }
+
+}
